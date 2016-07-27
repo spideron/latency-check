@@ -1,0 +1,6 @@
+{
+  "sampleServerUrl": "http://localhost:8080/text/",
+  "serverLocalPort": 8081,
+  "packageSizes": [16, 256, 1024],
+  "sampleInterval": 10000
+}

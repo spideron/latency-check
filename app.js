@@ -8,12 +8,13 @@ var express = require('express')
   , text = require('./routes/text')
   , monitor = require('./routes/monitor')
   , http = require('http')
-  , path = require('path');
+  , path = require('path')
+  , config = require('./config.json');
 
 var app = express();
 
 // all environments
-app.set('port', process.env.PORT || 8081);
+app.set('port', process.env.PORT || config.serverLocalPort);
 app.use(bodyParser.json());
 
 //app.get('/', routes.index);
