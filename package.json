@@ -12,6 +12,6 @@
     "aws-sdk": "2.4.10",
     "node-ec2-metadata": "0.0.4",
     "randomstring": "1.1.5",
-    "requet": "2.74.1"
+    "request": "2.74.1"
   }
 }
