@@ -7,6 +7,6 @@ var randomstring = require("randomstring"),
 
 exports.generate = function(req, res){
   var size = parseInt(req.params.size) * 1024;
-  res.addHeader('az', metadata.zone());
+  res.set('az', metadata.zone());
   res.send(randomstring.generate(size));
 };
